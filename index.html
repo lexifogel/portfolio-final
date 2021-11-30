@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/LF.png"/>
+    <script src="https://use.fontawesome.com/f9c76c7132.js"></script>
+    <title>Lexi Fogel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T33X1HHSP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6T33X1HHSP');
+    </script>
+
+  </head>
+
+  <body class="background-color">
+
+    <a class = "skip" href="#content1" tabindex="0">Skip to Main Content</a>
+
+    <header>
+
+      <!--old nav-->
+<!-- 
+        <nav class="background-color">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href = "index.html" class="current">Home</a>
+                <a href = "about.html">About</a>
+                <a href = "work.html">Work</a>
+                <a href = "contact.html">Contact</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+              </div>
+        </nav> -->
+        <!-- end old nav-->
+
+
+        <!-- new nav that matches js -->
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+              <button type="button" class="fa fa-bars navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+                  
+              </button>
+              <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item">
+                          <a href = "index.html" class="nav-link current">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="about.html" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="work.html" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <!-- end new nav js match-->
+
+    </header>       
+
+    <main>
+
+        <div class="container" id="content1">
+
+            <h1 class="funky">Hi, I'm Lexi!</h1>
+
+            <div class="flipcard">
+              <!-- ??? ^^ when you click it, just flips the picture over...-->
+              <div class="flipcard-inner">
+                <div class="flipcard-front">
+                  <img class="selfie" src="images/lex-kate-selfie.jpg" alt="selfie" />
+                </div>
+                <div class="flipcard-back">
+                  <!-- <p>Welcome to my portfolio!</p> -->
+                  <p class="playful" aria-label="Welcome to my portfolio!">
+                    <span aria-hidden="true">W</span>
+                    <span aria-hidden="true">e</span>
+                    <span aria-hidden="true">l</span>
+                    <span aria-hidden="true">c</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">m</span>
+                    <span aria-hidden="true">e</span><br>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true">t</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true">m</span>
+                    <span aria-hidden="true">y</span><br>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true">p</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">r</span>
+                    <span aria-hidden="true">t</span>
+                    <span aria-hidden="true">f</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">l</span>
+                    <span aria-hidden="true">i</span>
+                    <span aria-hidden="true">o</span>
+                    <span aria-hidden="true">!</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2>I am a current junior studying Data Science with a concentration in UX Design at the University of Michigan's School of Information. </h2>
+            <p>I am also minoring in Economics through the School of Literature, Science, and the Arts.</p>
+            <p>I'm passionate about utilizing data analysis to improve and advance society.
+            I also care about designing accessible technology that may assist in our everyday lives.</p>
+        </div>
+
+        <!-- "analysis can be used to make informed decisions, bring people together, and advance society" -->
+
+
+
+        <br><br><br>
+
+    </main>
+
+ 
+    <footer>
+        <p>Lexi Fogel &copy; 2021</p>
+	</footer>
+
+   <script src="js/javascript.js"></script>
+
+   <!-- JS Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+  
+  </html>
