@@ -208,12 +208,12 @@ a.skip:focus {
     text-align: center;
     background-color: #eefbfb;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+    padding-top: 10%;
 }
 
 .flipcard-back p {
     color: #215583;
     -webkit-text-stroke: 0;
-
 }
 /* end flipcard */ 
 
@@ -224,6 +224,7 @@ nav {
     color: #eefbfb;
     margin: .5em;
     background: transparent;
+    width: 100%;
 }
   
 nav a {
@@ -480,13 +481,10 @@ input[type=submit]:hover {
 }
 
 /* Parallax image text */
-span.text {
-
+.text {
     /* these 4 aren't working ? */
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 4em;
-    vertical-align: middle;
+    padding-top: 10%;
 }
 /* end parallax */
 
