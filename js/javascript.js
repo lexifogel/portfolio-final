@@ -30,30 +30,3 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
-
-/* Flipcard keyboard accessibility!! does not work :/ */
-
-/* flipcard content */
-var cardInner = document.querySelector('.flipcard-inner')
-
-/* flip action */
-cardInner.addEventListener("click", flipCard)
-
-/* flip flipcard (on event??) */
-function flipCard(event) {
-  cardInner.classList.toggle('is-flipped')
-}
-
-/* end flipcard */
-
-/* also in this area-- tabbing issues */
-
-
-
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-6T33X1HHSP');
