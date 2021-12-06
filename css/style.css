@@ -520,9 +520,11 @@ input[type=submit]:hover {
 
 /* Parallax image text */
 .text {
-    /* these 4 aren't working ? */
+    /* only padding works ? */
     text-align: center;
     padding-top: 10%;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
 }
 /* end parallax image */
 
