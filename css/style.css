@@ -239,7 +239,7 @@ a.skip:focus {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     color: #eefbfb;
     margin: .5em;
     background: transparent;
@@ -400,23 +400,18 @@ label {
 
 form {
     display: flex;
-    /* flex-basis: 1em;
-    flex-grow: 4; */
     margin-left: 10px;
+    flex: auto;
 }
 
-/* .form-inline {
+.form-inline {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-}
+    /* align-items: stretch; */
 
-.form-inline input {
-    margin: 10px 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    vertical-align: middle;
-} */
+    flex-basis: 1em;
+    flex-grow: 4;
+}
 
 
 #name, #email, #submit {
