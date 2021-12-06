@@ -436,6 +436,10 @@ label { /* from accessible-forms CSS */
     display: none;
 }
 
+input {
+    border-radius: .3em;
+}
+
 input[type=text], input[type=email] {
     width: 50%;
     padding: 12px 20px;
