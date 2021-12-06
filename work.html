@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/LF.png"/>
@@ -38,29 +35,22 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-sm">
-          <div class="container-fluid">
-              <button type="button" class="fa fa-bars navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                  <span class="navbar-toggler-icon"></span>
-              !</button>
-              <div id="navbarCollapse" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                      <li class="nav-item">
-                          <a href = "index.html" class="nav-link">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="about.html" class="nav-link">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="work.html" class="nav-link current">Work</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="contact.html" class="nav-link">Contact</a>
-                  </li>
-                  </ul>
-              </div>
-          </div>
+      <nav>
+        <a href = "index.html" class="current">Home</a>
+        <a href = "about.html">About</a>
+        <a href = "work.html">Work</a>
+        <a href = "contact.html">Contact</a>
       </nav>
+
+      <div class="dropdown">
+        <button class="dropbtn">≡</button>
+        <div class="dropdown-content">
+          <a href = "index.html" class="current">Home</a>
+          <a href = "about.html">About</a>
+          <a href = "work.html">Work</a>
+          <a href = "contact.html">Contact</a>
+        </div>
+      </div>
 
       <h1>Work</h1>
   </header> 
@@ -140,20 +130,6 @@
 
   <script src="js/javascript.js"></script>
 
-  <!-- JS Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
   </body>
   
   </html>
-
-<!-- old nav
-  <nav>
-    <ul class = "nav_links">
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "work.html">Work</a></li>
-        <li><a href = "contact.html">Contact</a></li>
-    </ul>
-</nav> -->

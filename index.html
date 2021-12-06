@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/LF.png"/>
@@ -36,26 +33,28 @@
 
     <header>
 
-      <!--old nav-->
-<!-- 
-        <nav class="background-color">
-            <div id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href = "index.html" class="current">Home</a>
-                <a href = "about.html">About</a>
-                <a href = "work.html">Work</a>
-                <a href = "contact.html">Contact</a>
-              </div>
-              
-              <div id="main">
-                <button class="openbtn" onclick="openNav()">&#9776;</button>
-              </div>
-        </nav> -->
-        <!-- end old nav-->
+        <nav>
+          <a href = "index.html" class="current">Home</a>
+          <a href = "about.html">About</a>
+          <a href = "work.html">Work</a>
+          <a href = "contact.html">Contact</a>
+        </nav>
+  
+        <div class="dropdown">
+          <button class="dropbtn">≡</button>
+          <div class="dropdown-content">
+            <a href = "index.html" class="current">Home</a>
+            <a href = "about.html">About</a>
+            <a href = "work.html">Work</a>
+            <a href = "contact.html">Contact</a>
+          </div>
+        </div>
+
+        
 
 
-        <!-- new nav that matches js -->
-        <nav class="navbar navbar-expand-sm">
+        <!-- bootstrap nav that matches js -->
+        <!-- <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
               <button type="button" class="fa fa-bars navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 !<span class="navbar-toggler-icon"></span>
@@ -77,8 +76,8 @@
                   </ul>
               </div>
           </div>
-      </nav>
-    <!-- end new nav js match-->
+      </nav> -->
+    <!-- end bootstrap nav -->
 
     </header>       
 
@@ -144,9 +143,6 @@
 	</footer>
 
    <script src="js/javascript.js"></script>
-
-   <!-- JS Option 1: Bootstrap Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
   

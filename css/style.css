@@ -21,6 +21,27 @@ body {
         #5da2d5 100%);
 }
 
+/* skip to main content */
+/* stolen from hw 5 ! */
+a.skip {
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}   
+
+a.skip:focus {
+    position: static;
+    top: 0px;
+    visibility: visible;
+}
+/* end skip */
+
+
+/* standard formatting -- all pages */
 h1 {
     font-size: 3.25em;
     color: #eefbfb;
@@ -33,47 +54,6 @@ h1 {
 
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
 }
-
-/* playful */
-@keyframes scatter {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -10px;
-    }
-    100% {
-      top: 0;
-    }
-  }
- 
-.playful span {
-  position: relative;
-  color: #AB0707;
-  text-shadow: .05em .07em #FF0BED;
-  animation: scatter 1.75s infinite;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.playful span:nth-child(2n) {
-  color: #1A7F64;
-  text-shadow: .05em .07em #0BFFF6;
-  animation-delay: 0.3s;
-}
-
-.playful span:nth-child(3n) {
-  animation-delay: 0.15s;
-}
-
-.playful span:nth-child(5n) {
-  animation-delay: 0.4s;
-}
-
-.playful span:nth-child(7n) {
-  animation-delay: 0.25s;
-}
-/* end playful */
 
 h2 {
     font-size: 1.5em;
@@ -119,6 +99,7 @@ ul, li {
 
 a {
     color: #eefbfb !important;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -127,41 +108,32 @@ a:hover {
 
 a:visited {
     text-decoration: none;
-    color: #FFF; /* change visited color */
+    color: #c812ed; /* change visited color */
 }
 
-a.connect:visited {
-    color: #FFF; /* change visited color ?? */
+a.current {
+    text-transform: uppercase;
 }
 
-.container p {
-    margin: .75em auto;
+/* fixed pic issue vv */
+img {
+    max-width: 100%;
+    object-fit: inherit;
 }
 
-
-/* skip to main content */
-/* stolen from hw 5 ! */
-a.skip {
-    left: 0;
-    padding: 6px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  
-    /* Requirement 3a code here*/
-    position: absolute;
-    top: -40px;
-}   
-
-/* Requirement 3b code here*/
-a.skip:focus {
-    position: static;
-    top: 0px;
-    visibility: visible;
+a:hover {
+    font-weight: bold;
 }
-/* FIX THESE ^^ !! */
 
-/* end skip */
+footer {
+    background-color: transparent;
+    position: static; /* CENTER ! */
+    text-align: center;
+    /* stick to bottom! ? !!!! */
+    color: #eefbfb;
+    font-size: .75em;
+}
+/* end standard formatting -- all pages */
 
 
 /* flip card */
@@ -237,64 +209,96 @@ a.skip:focus {
 /* end flipcard */ 
 
 
+
+/* animation */
+/* playful ~~ */
+@keyframes scatter {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+ 
+.playful span {
+  position: relative;
+  color: #AB0707;
+  text-shadow: .05em .07em #FF0BED;
+  animation: scatter 1.75s infinite;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.playful span:nth-child(2n) {
+  color: #1A7F64;
+  text-shadow: .05em .07em #0BFFF6;
+  animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+  animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+  animation-delay: 0.4s;
+}
+
+.playful span:nth-child(7n) {
+  animation-delay: 0.25s;
+}
+/* end playful */
+
+
+/* dropdown -- mobile only */
 nav {
-    display: flex;
-    /* justify-content: flex-end; */
-    color: #eefbfb;
-    margin: .5em;
-    background: transparent;
-    width: 100%;
-}
-  
-nav a {
-    font-size: 16px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li {
-    display: inline;
-}
-
-a.current {
-    text-transform: uppercase;
-}
-
-
-/* new nav -- bootstrap */
-button.navbar-toggler, span.navbar-toggler-icon, #navbarCollapse {
-    color: white; /* none of these work :/ */
-}
-
-/* !!!** */
-button .fafa-barsnavbar-togglercollapsed { /* selector ?? doesnt work */
     display: none;
 }
 
-/* end new bootstrap nav */
-
-
-
-/* fixed pic issue vv */
-img {
-    max-width: 100%;
-    object-fit: inherit;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-a:hover {
-    font-weight: bold;
-}
-
-footer {
+.dropbtn {
     background-color: transparent;
-    position: static; /* CENTER ! */
-    text-align: center;
-    /* stick to bottom! ? !!!! */
-    color: #eefbfb;
-    font-size: .75em;
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    border: none;
 }
 
-.container {
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 1em 1em;
+  z-index: 1;
+  background-color: #5da2d5;
+  border-radius: .3em;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+padding: .5em 0;
+display: block;
+}
+/* end dropdown -- mobile only */
+
+
+/* Home page */ 
+
+.container p {
+    margin: .75em auto;
+}
+
+.container { 
     margin-bottom: 3em;
 }
 
@@ -302,6 +306,8 @@ footer {
     margin-top: .5em;
     margin-bottom: 1.25em;
 }
+/* end home */
+
 
 /* About page */
 
@@ -355,6 +361,7 @@ footer {
 #pic9 {
     grid-row: 9 / span 1;
 }
+/* end about */
 
 
 /* Work page */
@@ -396,6 +403,12 @@ footer {
 #title2 {
     margin-top: 1em;
 }
+
+#title3 {
+    margin-top: 1em;
+}
+/* end work */
+
 
 /* Contact page */
 
@@ -482,8 +495,10 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.9;
 }
+/* end contact */
 
-/* parallax */
+
+/* parallax image -- on contact page */
 .parallax {
     margin-top: 4em;
     margin-bottom: 14em;
@@ -509,12 +524,30 @@ input[type=submit]:hover {
     text-align: center;
     padding-top: 10%;
 }
-/* end parallax */
+/* end parallax image */
 
-/* from HW 6 vvv  -- want to expand nav */
-/* (no buttons) on tablet / desktop views */
-/* (will underline the current page!) */
+
+
+/* TABLET view */
 @media screen and (min-width: 760px) {
+
+    .dropdown {
+        display: none;
+      }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+  
+        /* background-color: #5da2d5; */
+        width: 100%;
+        text-align: right;
+    }
+
+    nav a {
+        padding: .5em;
+        -webkit-text-stroke: .3px #5da2d5;
+    }
 
     /* About page */
 
@@ -682,7 +715,21 @@ input[type=submit]:hover {
     
 }
 
+/* DESKTOP view */
 @media screen and (min-width: 1000px) {
+
+    nav {
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    nav a {
+        padding: 1em;
+    }
+
 
     /* About page */
     
