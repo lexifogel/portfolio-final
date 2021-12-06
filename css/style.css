@@ -49,33 +49,28 @@ h1 {
  
 .playful span {
   position: relative;
-  color: #5362F6;
-  text-shadow: .03em .05em #E485F8;
+  color: #AB0707;
+  text-shadow: .05em .07em #FF0BED;
   animation: scatter 1.75s infinite;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 .playful span:nth-child(2n) {
-  color: #ED625C;
-  text-shadow: .03em .05em #F2A063;
+  color: #1A7F64;
+  text-shadow: .05em .07em #0BFFF6;
   animation-delay: 0.3s;
 }
 
 .playful span:nth-child(3n) {
-  color: #FFD913;
-  text-shadow: .03em .05em #6EC0A9;
   animation-delay: 0.15s;
 }
 
 .playful span:nth-child(5n) {
-  color: #555BFF;
-  text-shadow: .03em .05em #E485F8;
   animation-delay: 0.4s;
 }
 
-.playful span:nth-child(7n), .playful span:nth-child(11n) {
-  color: #FF9C55;
-  text-shadow: .03em .05em #FF5555;
+.playful span:nth-child(7n) {
   animation-delay: 0.25s;
 }
 /* end playful */
@@ -123,7 +118,11 @@ ul, li {
 }
 
 a {
-    color: #eefbfb;
+    color: #eefbfb !important;
+}
+
+a:hover {
+    color: #FFF !important;
 }
 
 a:visited {
@@ -225,7 +224,8 @@ a.skip:focus {
 .flipcard-back {
 	transform: rotateY(180deg);
     text-align: center;
-    background-color: #eefbfb;
+    /* background-color: #eefbfb; */
+    background-color: #FFF;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
     padding-top: 10%;
 }
@@ -264,6 +264,11 @@ a.current {
 /* new nav -- bootstrap */
 button.navbar-toggler, span.navbar-toggler-icon, #navbarCollapse {
     color: white; /* none of these work :/ */
+}
+
+/* !!!** */
+button .fafa-barsnavbar-togglercollapsed { /* selector ?? doesnt work */
+    display: none;
 }
 
 /* end new bootstrap nav */
